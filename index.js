@@ -25,7 +25,6 @@ app.get('/api/persons', (req, res) => {
   Person.find({}).then(persons => {
     res.json(persons)
   })
-  .catch(error => next(error))
 })
 
 app.get('/api/persons/:id', (req, res) => {
