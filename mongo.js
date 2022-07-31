@@ -8,7 +8,7 @@ if (process.argv.length<3) {
 
 const password = process.argv[2]
 
-const url = `mongodb+srv://lempea_pmc:password@cluster0.km161.mongodb.net/?retryWrites=true&w=majority`
+const url = `mongodb+srv://lempea_pmc:ELmuiw6lD6rRhSjh@cluster0.km161.mongodb.net/?retryWrites=true&w=majority`
 
 mongoose.connect(url)
 
@@ -18,7 +18,7 @@ const personSchema = new mongoose.Schema({
 })
 
 const Person = mongoose.model('Person', personSchema)
-
+/*
 const person = new Person({
     name: process.argv[3],
     number: process.argv[4]
@@ -38,3 +38,4 @@ if (process.argv.length>4) {
         mongoose.connection.close()
     })
 }
+*/
